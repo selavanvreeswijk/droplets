@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droplets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container visible" id="startScreen">
+        <h1>This is a story about the origin of droplets</h1>
+        <h2>Through visual imagery and an audio tour, you will be guided through this story. Turn on your sound, and let's get started!</h2>
+        <button class="start-button" onclick="showSlide(1); playSound('sound0')">Start</button>
+        <audio id="sound0" src="sound0.wav"></audio>
+    </div>
+
+    <div class="container hidden" id="slide1">
+        <h1>The wish</h1>
+        <img src="image1.jpg" alt="Afbeelding 1">
+        <button class="next-button" onclick="stopSound(); showSlide(2); playSound('sound1')">Continue</button>
+        <audio id="sound1" src="sound1.wav"></audio>
+    </div>
+
+    <div class="container hidden" id="slide2">
+        <h1>The creation</h1>
+        <img src="image2.jpg" alt="Afbeelding 2">
+        <button class="next-button" onclick="stopSound(); showSlide(3); playSound('sound2')">Continue</button>
+        <audio id="sound2" src="sound2.wav"></audio>
+    </div>
+
+    <div class="container hidden" id="slide3">
+        <h1>Lumino</h1>
+        <img src="image3.jpg" alt="Afbeelding 3">
+        <button class="next-button" onclick="stopSound(); showSlide(4); playSound('sound3')">Continue</button>
+        <audio id="sound3" src="sound3.wav"></audio>
+    </div>
+
+    <div class="container hidden" id="slide4">
+        <h1>Emerging</h1>
+        <img src="image4.jpg" alt="Afbeelding 4">
+        <button class="next-button" onclick="stopSound(); showSlide(5); playSound('sound4')">Continue</button>
+        <audio id="sound4" src="sound4.wav"></audio>
+    </div>
+
+    <div class="container hidden" id="slide5">
+        <h1>Droplettes</h1>
+        <img src="image5.jpg" alt="Afbeelding 5">
+        <button class="next-button" onclick="stopSound(); showSlide(6); playSound('sound5')">Continue</button>
+        <audio id="sound5" src="sound5.wav"></audio>
+    </div>
+
+    <div class="container hidden" id="slide6">
+        <h1>Adventure</h1>
+        <img src="image6.jpg" alt="Afbeelding 6">
+        <button class="next-button" onclick="stopSound(); showSlide(0)">Back to start</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
